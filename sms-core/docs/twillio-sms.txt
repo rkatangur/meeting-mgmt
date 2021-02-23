@@ -1,0 +1,35 @@
+SMS ability to EPhase Product:
+
+https://www.twilio.com/docs/sms/quickstart/java#sign-up-for-or-sign-in-to-twilio
+https://www.twilio.com/console/sms/dashboard
+
+https://www.twilio.com/docs/sms
+
+
+Email: yex4@pitt.edu
+Password: Yesi9091964serve
+
+Live credentials:
+Account SID: ACdf645a6a396aedd7b48769ac43e27de6
+Auth token: cb975b6122475e1ecfc0cb6172e19d89
+
+
+Test credentials:
+Account SID: ACfe9840f01cec5bf6d963ab9719c07dda
+Auth token: 96cb16f1a4fb90a2713a2760fac1d6e3
+
++12058469445
+
+TODO:
+1. Setup the twillio with a from phone number to use for sending text messages.
+2. Develop API/endpoint using spring boot to send message to a user's phone nuber.
+   a. Support a simple plain text message.
+   b. Support message with media like image and videos.
+      https://www.twilio.com/docs/sms/tutorials/how-to-send-sms-messages-java
+3. Setup webhooks 
+  a. Track the status of the messages sent by the application to the user. Process the notifications from twillo using webhooks. Process messages sent by the user to the application's phone number.
+     https://www.twilio.com/docs/sms/tutorials/how-to-confirm-delivery
+  b. Server or Application replying to the messages sent by the user.
+     https://www.twilio.com/docs/sms/tutorials/how-to-receive-and-reply-java
+
+4. Integration of internal application with the the meeting-mgmt libray for sending messages.

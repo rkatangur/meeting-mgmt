@@ -1,0 +1,150 @@
+.tw_video_wrap{
+	padding: 0 30px;
+	display: table;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+   
+    overflow-x: hidden;
+    background: #f8f9fa;
+    
+}
+.tw_video_wrap>div{
+	 height: calc(100vh - 60px);
+	 margin:0 10px;
+	 display: table-cell;
+ 
+	 vertical-align: middle;
+}
+.tw_video_wrap>div:nth-of-type(1) {width: 350px;padding-right: 30px;}
+.tw_video_wrap>div:nth-of-type(2) { }
+.tw_video_wrap>div:nth-of-type(3) {width: 400px;padding-left: 30px;}
+.tw_video_widget{
+	
+	border-radius:10px;
+	background:#fff;
+	 
+	margin-bottom:30px;	
+	width:100%;
+		padding:20px;
+		position:relative;
+		 
+	
+}
+.tw_btn_grp{
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding:20px
+}
+.tw_title{
+	font-size:18px;
+	font-weight:500;
+	margin:0;
+
+	color:#585858;
+}
+
+.tw_btn{
+border:none;
+padding:8px;
+border-radius:50%;
+display:inline-block;
+ 
+color:#fff;
+width:35px;
+height:35px;
+text-align:center;
+cursor:pointer;
+margin-right:20px;
+ box-shadow: 0px 0px 6px 0px rgba(200, 200, 200, 0.3);	
+}
+
+.preview,.mic{
+	    background: rgba(0,0,0,0.8);
+	    
+	    color:#fff
+   
+}
+.mic{
+	display:none;
+}
+.connect{
+	
+    background: #00a300;
+    color:#fff;
+}
+
+.disconnect{
+	  background: #ff0000;
+    color:#fff;
+    padding-top:6px;
+    display:none;
+   
+}
+
+.disconnect i{ transform: rotate(135deg);}
+
+video{
+	width:100%;
+	height:100%;
+	/* object-fit: cover; */
+}
+
+.tw_video_parent{
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:4px;
+	overflow:hidden;
+	border-radius: 10px;
+	width:100%;
+}
+
+
+
+.tw_remote_video_wrap{
+	height:69%;
+	overflow:hidden
+}
+
+
+#room-controls{
+	padding:100px;
+	position:relative;
+	z-index:999;
+	display:none;
+}
+
+
+ul{
+	padding:0;
+	list-style:none;
+	margin-top:20px;
+}
+ul li{
+	margin-bottom:10px;
+}
+ul li label{
+	
+	display:inline-block;
+	font-weight:500;
+	margin-bottom:0px;
+	
+	
+}
+
+ul li label:after{
+	content:':';
+	
+}
+
+.tw_local_video{
+	height:221px;
+	overflow:hidden
+}

@@ -1,0 +1,6 @@
+﻿  
+-- DROP SCHEMA mytutor;
+
+CREATE SCHEMA IF NOT EXISTS  mytutor AUTHORIZATION postgres;  
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";

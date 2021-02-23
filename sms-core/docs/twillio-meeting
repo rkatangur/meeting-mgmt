@@ -1,0 +1,49 @@
+ “Virtual Care” to EPhase Product:
+1. Users who want to connect can join a room that is available. Admin will be the host for the virtual meeting. In order to join a meeting
+   a. API should first create a room if not available.
+   b. If vacant rooms are available, user needs to take one and block it so that the other participants can join the same meeting.
+2. The meeting recordings both audio and video with be stored so that the provider can review or view the recording at any later state. This will be tied to the encounter.
+3. Live Chat will be provided, all the chat messages will be saved and uploaded as part of the encounter.
+
+4. Make the index2.html UI look and feel similar to the design/layout.
+
+Integration with Twillio:
+5. Create a Room if not available.
+6. Join a room and notify others that a user had joined.
+7. Leave the Meeting/Room.
+8. Show Meeting history
+9. Playback a meeting
+11. Integrate twillio Chat API.
+10. Show chat conversation of a meeting.
+ 
+Twillio Account:
+
+SDKkey: mamGXMhfQZ21DXHL5Z6xgg
+SDK Secret: g3OGE0u8gspXaqFTETiQuMQ17Pb8fqfcRVyP
+
+Twillo:
+username: rkatangur@4-serveinc.com
+password: wixom28345#108
+
+TFA code: bj_ceEeatJBwmgoDorNyiuV3YuTg9J6ZrseFXlLU
+
+SID: AC1099d28da50686495d55cc04b7a7db57
+AuthToken: 2e05d60fb814ae9a9e82729d8158a211
+
+Helpful links:
+https://www.twilio.com/console/video/project/testing-tools
+https://www.twilio.com/console
+https://www.twilio.com/docs/video/api/participants
+
+https://media.twiliocdn.com/sdk/js/video/releases/2.0.0/docs/
+https://github.com/twilio/video-quickstart-js
+
+
+
+Integration with Appointment in ephase:
+1. Need to add a new field called meeting type which can be INPERSON or VIRTUAL
+	a. When the meeting type is INPERSON, careSetting information is needed and is the user selects the meeting type as VIRTUAL careSetting will be null.
+
+2. As part of Appointment creation create a zoom meeting and capture the information in a new column "appt_attributes" and store the information as a JSON.
+	a. Add a column for this. Later we will move to seperate table if we see the data is complex.
+	
